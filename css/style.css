@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+
+#red {
+    background-color: red;
+    animation: redfall 2s ease-in-out ;
+    position: relative; 
+    
+}
+
+@keyframes redfall {
+    0% {top: -250px}
+    100% {top: 0}
+
+}
+
+#yellow {
+    background-color: yellow; 
+    animation: yellowappear 4s ease-in-out; 
+    animation-fill-mode: forwards; 
+    position: relative; 
+    
+}
+
+@keyframes yellowappear {
+    0% { opacity: 0; }
+    100% { opacity: 1; background-color: yellow; }
+}
+#green {
+    background-color: green;
+    animation: greenrotate 2.1s linear;
+    position: relative; 
+}
+
+@keyframes greenrotate {
+    0% { transform: rotateY(0deg); } 
+    100% { transform: rotateY(360deg); }    
+}
